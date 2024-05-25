@@ -6,6 +6,7 @@ import { swaggerSpec } from './core/swagger';
 
 import { PORT } from './config';
 import { router } from './core/_routes';
+import { cache } from './utils/cache-config';
 
 // App Declaration
 const app = express();
@@ -16,7 +17,7 @@ app.set('port', PORT != null || 3000);
 // Middlewares
 app.use(morgan('dev'));
 app.use(cors());
-app.use(express.json()); // middleware que transforma la req.body a un json
+app.use(cache);
 
 // Routes
 app.use('/', router);
