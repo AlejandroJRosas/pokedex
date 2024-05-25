@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { HTTP_CODE } from '../../utils/http-code';
+import pokemonRouter from '../pokemons/pokemons.routes';
 
 export const router = Router();
 
@@ -11,4 +12,5 @@ router.get('/ping', (_req, res) => {
 });
 
 // Public Routes
-// router.use('/auth', authRouter);
+router.use('/pokemons', pokemonRouter);
+// router.use('/objects', objectsRouter);
