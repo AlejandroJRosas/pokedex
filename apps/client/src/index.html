@@ -1,13 +1,27 @@
+<!-- eslint-disable @html-eslint/id-naming-convention -->
+<!-- eslint-disable @html-eslint/sort-attrs -->
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link type="image/svg+xml" href="/vite.svg" rel="icon" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Vite App</title>
+    <title>SPA Routing</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="app"></div>
+    <!-- Botones de navegación -->
+    <header>
+      <button type="button" id="home">Home</button>
+      <button type="button" id="about">About</button>
+      <button type="button" id="test">Test</button>
+    </header>
+
+    <!-- Aquí es donde se insertará el contenido según la página en la que nos encontremos -->
+    <div id="content"></div>
+
+    <!-- En estos archivos estará la mágica para la navegación -->
+    <script type="module" src="./router.js"></script>
+    <script type="module" src="./routes.js"></script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

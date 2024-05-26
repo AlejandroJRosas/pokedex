@@ -42,8 +42,8 @@ importers:
   apps/client:
     devDependencies:
       vite:
-        specifier: ^5.2.0
-        version: 5.2.11(@types/node@20.12.11)
+        specifier: 5.2.0
+        version: 5.2.0(@types/node@20.12.11)
 
   apps/server:
     dependencies:
@@ -1985,8 +1985,8 @@ packages:
     resolution: {integrity: sha512-XPWRmzTdDyQm8sDw2WsJAF+nG+FI8nB/mdbPvN1WRe32YiEyiQwCPBshpb+fYfQTyTJSIr3aTEdlqGGfoUcLiA==}
     engines: {'0': node >=0.6.0}
 
-  vite@5.2.11:
-    resolution: {integrity: sha512-HndV31LWW05i1BLPMUCE1B9E9GFbOu1MbenhS58FuK6owSO5qHm7GiCotrNY1YE5rMeQSFBGmT5ZaLEjFizgiQ==}
+  vite@5.2.0:
+    resolution: {integrity: sha512-xMSLJNEjNk/3DJRgWlPADDwaU9AgYRodDH2t6oENhJnIlmU9Hx1Q6VpjyXua/JdMw1WJRbnAgHJ9xgET9gnIAg==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4011,7 +4011,7 @@ snapshots:
       core-util-is: 1.0.2
       extsprintf: 1.2.0
 
-  vite@5.2.11(@types/node@20.12.11):
+  vite@5.2.0(@types/node@20.12.11):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38

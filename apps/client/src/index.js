@@ -1,26 +1,28 @@
-import './index.css';
-import javascriptLogo from './assets/javascript.svg';
-import viteLogo from '/vite.svg';
-import { setupCounter } from './services/counter.js';
-import './components/CapacitorSMD';
+import { Router } from './router';
+import { PATHS } from './routes';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <capacitor-smd></capacitor-smd>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`;
+const ROUTER = new Router(PATHS);
 
-setupCounter(document.querySelector('#counter'));
+ROUTER.initRouter();
+
+const homeButton = document.querySelector('#home');
+const aboutButton = document.querySelector('#about');
+const testButton = document.querySelector('#test');
+
+// function navigate(routeName) {
+//   console.log('on navigate');
+//   ROUTER.load(`${routeName}`);
+// }
+
+homeButton.addEventListener('click', () => {
+  console.log('Home Event');
+  ROUTER.load('home');
+});
+aboutButton.addEventListener('click', () => {
+  console.log('About Event');
+  ROUTER.load('about');
+});
+testButton.addEventListener('click', () => {
+  console.log('Test Event');
+  ROUTER.load('test');
+});
