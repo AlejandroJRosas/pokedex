@@ -4,24 +4,31 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>SPA Routing</title>
     <link href="style.css" rel="stylesheet" />
+    <script type="module" src="./script.js"></script>
   </head>
   <body>
     <!-- Botones de navegación -->
     <header>
-      <button type="button" id="home">Home</button>
-      <button type="button" id="about">About</button>
-      <button type="button" id="test">Test</button>
+      <button class="menu__item" value="home" type="button" id="home">
+        Home
+      </button>
+      <button class="menu__item" value="about" type="button" id="about">
+        About
+      </button>
+      <button class="menu__item" value="test" type="button" id="test">
+        Test
+      </button>
     </header>
 
     <!-- Aquí es donde se insertará el contenido según la página en la que nos encontremos -->
-    <div id="content"></div>
 
+    <main>
+      <section id="container"></section>
+    </main>
     <!-- En estos archivos estará la mágica para la navegación -->
-    <script type="module" src="./router.js"></script>
-    <script type="module" src="./routes.js"></script>
-    <script type="module" src="./index.js"></script>
   </body>
 </html>
