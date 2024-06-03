@@ -6,29 +6,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>SPA Routing</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="./index.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="./script.js"></script>
+    <title>SPA Routing</title>
   </head>
   <body>
     <!-- Botones de navegación -->
-    <header>
-      <button class="menu__item" value="home" type="button" id="home">
-        Home
-      </button>
-      <button class="menu__item" value="about" type="button" id="about">
-        About
-      </button>
-      <button class="menu__item" value="test" type="button" id="test">
-        Test
-      </button>
-    </header>
+    <navbar-component></navbar-component>
 
     <!-- Aquí es donde se insertará el contenido según la página en la que nos encontremos -->
 
     <main>
       <section id="container"></section>
     </main>
-    <!-- En estos archivos estará la mágica para la navegación -->
   </body>
 </html>

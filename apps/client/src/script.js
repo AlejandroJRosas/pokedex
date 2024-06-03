@@ -1,3 +1,6 @@
+import './components/card/PokemonCard';
+import './components/navbar/Navbar';
+
 window.onload = function () {
   const path = window.location.pathname.split('/');
 
