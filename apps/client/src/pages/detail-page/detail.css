@@ -21,9 +21,12 @@ img {
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background: #55d6c2;
   border-bottom: 2px solid #000000;
+  gap: 70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navbar img {
@@ -41,6 +44,10 @@ img {
 .links-nav a {
   text-decoration: none;
   font-size: 20px;
+}
+
+.links-nav a:hover {
+  color: #f55d3e;
 }
 
 /*Main*/
