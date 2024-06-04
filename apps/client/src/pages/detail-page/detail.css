@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Pixelify Sans';
+  background-color: #eaefbd;
+}
+
 img {
   max-width: 100%;
 }
@@ -16,7 +21,9 @@ img {
 .navbar {
   display: flex;
   align-items: center;
-  background: lightblue;
+  justify-content: space-around;
+  background: #55d6c2;
+  border-bottom: 2px solid #000000;
 }
 
 .navbar img {
@@ -29,6 +36,11 @@ img {
   grid-template-columns: repeat(3, 1fr);
   margin-left: 4em;
   column-gap: 3em;
+}
+
+.links-nav a {
+  text-decoration: none;
+  font-size: 20px;
 }
 
 /*Main*/
@@ -47,12 +59,13 @@ main {
   border: 2px solid #000000;
   margin-left: 2em;
   align-items: center;
+  border-radius: 5%;
+  background-color: white;
 }
 
 .pokemon-container img {
   padding: 1em;
   width: 20em;
-  border: 2px solid #000000;
   margin: 1em 0 1em 0;
 }
 
@@ -70,6 +83,13 @@ main {
   background: #00000022;
   padding: 2em 1em;
   margin: auto;
+  text-align: center;
+  border-radius: 5%;
+}
+
+.pokemon-info-container h3 {
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .pokemon-info-container ul {
@@ -113,7 +133,7 @@ main {
   position: absolute;
   width: var(--wth);
   height: 100%;
-  background: #78cc78;
+  background: #04e762;
 }
 
 /*Cadena evolutiva*/
@@ -126,6 +146,8 @@ main {
   overflow: hidden;
   height: 20em;
   margin: auto;
+  border-radius: 5%;
+  background-color: white;
 }
 
 .pokemon-evolution-container img {
@@ -144,9 +166,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #00000022;
+  background: #466365;
   height: 5em;
   border: 2px solid #000000;
+  color: white;
 }
 
 /*Responsive Movil*/
@@ -156,7 +179,7 @@ footer {
   .navbar {
     display: flex;
     align-items: center;
-    background: lightgreen;
+    background: #55d6c2;
     width: 100vw;
   }
 
