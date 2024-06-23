@@ -1,0 +1,252 @@
+/*Global*/
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Header*/
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #55d6c2;
+  border-bottom: 2px solid #000000;
+  gap: 70%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar img {
+  width: 3.5em;
+  margin: 0.5em 2em 0.5em 1em;
+}
+
+.links-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 4em;
+  column-gap: 3em;
+}
+
+.links-nav a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.links-nav a:hover {
+  color: #f55d3e;
+}
+
+/*Main*/
+
+/*Filtros*/
+
+.tab-tipos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  background-attachment: fixed;
+}
+
+#btn_filtros {
+  background-color: #727f7dbd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100px;
+  align-self: center;
+}
+
+.contenedor-filtros {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  width: 550px;
+  align-self: center;
+}
+
+.filtro-tipos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  padding: 0;
+}
+
+.filtro-tipos li {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.filtro-tipos li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Asegura que todos los botones tengan el mismo ancho */
+  padding: 0.5em;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+#fuego {
+  background: #f55d3e;
+  color: white;
+}
+
+#agua {
+  background: #55a2d6;
+  color: white;
+}
+
+#planta {
+  background: #55d65d;
+  color: white;
+}
+
+#electrico {
+  background: #f5d63e;
+  color: white;
+}
+
+#roca {
+  background: #b96a42;
+  color: white;
+}
+
+#volador {
+  background: #a2d6d6;
+  color: white;
+}
+
+#veneno {
+  background: #d655d6;
+  color: white;
+}
+
+#psiquico {
+  background: #f44bdb;
+  color: white;
+}
+
+#bicho {
+  background: #d6d655;
+  color: white;
+}
+
+#tierra {
+  background: #d6b655;
+  color: white;
+}
+
+#lucha {
+  background: #d65555;
+  color: white;
+}
+
+#fantasma {
+  background: #6a42b9;
+  color: white;
+}
+
+#hada {
+  background: #f5a2d6;
+  color: white;
+}
+
+#siniestro {
+  background: #6a6a6a;
+  color: white;
+}
+
+#acero {
+  background: #9b9b9b;
+  color: white;
+}
+
+#hielo {
+  background: #55d6d6;
+  color: white;
+}
+
+#dragon {
+  background: #6a42b9;
+  color: white;
+}
+
+#normal {
+  background: #c2c1c1;
+  color: white;
+}
+
+/*Catalogo Pokemon*/
+
+.catalogo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em 1em;
+  padding: 1em;
+  margin: 2em;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  background: #dfdfdf;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+}
+
+.pokemon-card img {
+  width: 200px;
+  border-radius: 10px;
+  align-self: center;
+  padding: 10px;
+}
+
+.numero_pokemon {
+  margin-bottom: 1em;
+  color: rgb(0, 0, 0, 0.4);
+}
+
+.tipos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.5em;
+}
+
+/*Footer*/
+
+Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #55d6c2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
