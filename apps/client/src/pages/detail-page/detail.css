@@ -194,7 +194,7 @@ footer {
   align-items: center;
   background: #466365;
   height: 5em;
-  border: 2px solid #000000;
+  border-top: 2px solid #000000;
   color: white;
 }
 

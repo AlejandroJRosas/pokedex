@@ -269,11 +269,12 @@ button {
 
 /*Footer*/
 
-Footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #55d6c2;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background: #466365;
+  height: 5em;
+  border-top: 2px solid #000000;
+  color: white;
 }
