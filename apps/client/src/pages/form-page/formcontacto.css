@@ -24,7 +24,7 @@ main {
 /* Navbar styles */
 .navbar {
   background-color: #333;
-  padding: 0;
+  padding: 1em;
   margin: 0;
   top: 0;
   left: 0;
