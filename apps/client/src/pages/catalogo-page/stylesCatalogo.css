@@ -18,7 +18,11 @@ img {
 /*Header*/
 /*Navbar styles*/
 
+/* Navbar styles */
 .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   background-color: #333;
   padding: 1em;
   margin: 0;
@@ -37,6 +41,24 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 10px 20px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+  padding-right: 2.5em;
+}
+
+.social-media .social-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media .social-icon:hover {
+  color: #F55D3E;
 }
 
 .navbar-logo img {
@@ -62,10 +84,12 @@ img {
   padding: 8px 16px;
   border-radius: 4px;
   transition: background-color 0.3s;
+  transition: color 0.3s;
 }
 
 .navbar-menu a:hover {
   background-color: #575757;
+  color: #F55D3E;
 }
 
 /*Main*/
