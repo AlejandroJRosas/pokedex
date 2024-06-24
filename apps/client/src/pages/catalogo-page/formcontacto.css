@@ -33,7 +33,7 @@ main {
 .navbar-container {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Alinear los elementos a la izquierda */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -43,6 +43,15 @@ main {
 .navbar-logo img {
   height: 40px;
   margin-right: 20px;
+}
+
+.burger-menu {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
 }
 
 .navbar-menu {
@@ -67,6 +76,39 @@ main {
 
 .navbar-menu a:hover {
   background-color: #575757;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-container {
+    justify-content: flex-start; /* Alinear los elementos a la izquierda */
+    padding-right: 10px; /* Añadir espacio a la derecha */
+  }
+
+  .navbar-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px; /* Ajustar según la altura de tu navbar */
+    left: 0;
+  }
+
+  .navbar-menu.show {
+    display: flex;
+  }
+
+  .navbar-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-left: auto; /* Asegurar que el botón burger esté a la derecha */
+    margin-right: 10px; /* Añadir espacio a la derecha */
+  }
 }
 
 .contact-form-container {
