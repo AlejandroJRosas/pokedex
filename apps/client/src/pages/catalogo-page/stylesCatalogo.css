@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Pixelify Sans';
+}
+
 img {
   max-width: 100%;
 }
@@ -74,6 +78,10 @@ img {
   justify-content: center;
   margin: 2em;
   background-attachment: fixed;
+}
+
+button {
+  font-family: 'Pixelify Sans';
 }
 
 #btn_filtros {
