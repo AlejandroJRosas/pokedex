@@ -1,3 +1,83 @@
+body {
+  font-family: 'Pixelify Sans';
+  overflow-y: scroll;
+  margin: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1em;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+  padding-right: 2.5em;
+}
+
+.social-media .social-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media .social-icon:hover {
+  color: #F55D3E;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  background-color: #575757;
+  color: #F55D3E;
+}
+
 .project-description {
   display: flex;
   align-items: center;
@@ -67,60 +147,14 @@
   line-height: 1.5;
 }
 
-/* Navbar styles */
-.navbar {
-  background-color: #333;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  position: relative;
-}
-
-.navbar-container {
+footer {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px 20px;
-}
-
-.navbar-logo img {
-  height: 40px;
-  margin-right: 20px;
-}
-
-.navbar-menu {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-menu li {
-  margin-right: 10px;
-}
-
-.navbar-menu a {
-  text-decoration: none;
+  background: #466365;
+  height: 5em;
+  border-top: 2px solid #000000;
   color: white;
-  padding: 8px 16px;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-}
-
-.navbar-menu a:hover {
-  background-color: #575757;
-}
-
-body {
-  overflow-y: scroll;
-  margin: 0;
 }
 
 /* Responsive design */
