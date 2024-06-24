@@ -1,17 +1,14 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Integrantes</title>
+    <title>Formulario de Contacto</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <link
-      href="../catalogo-page/integrantes.css"
-      rel="stylesheet"
-    />
+    <link href="formcontacto.css" rel="stylesheet" />
     <link
       href="/apps/client/src/pages/carrusel/carrusel.css"
       rel="stylesheet"
@@ -151,63 +148,76 @@
         </ul>
       </div>
 
-      <section class="project-description">
-        <div class="text-container">
-          <h2>Descripción del proyecto</h2>
-          <p>Aquí puedes agregar el texto descriptivo de tu proyecto.</p>
-        </div>
-      </section>
+      <div class="contact-form-container">
+        <div class="column left-column">
+          <div class="overlay">
+            <h2>Contáctanos</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+              imperdiet, nulla et dictum interdum.
+            </p>
 
-      <section class="card-row">
-        <div class="card">
-          <div class="card-image">
-            <img alt="Tarjeta 1" src="ruta-imagen1.jpg" />
-          </div>
-          <div class="card-description">
-            <h3>Tarjeta 1</h3>
-            <p>Descripción de la tarjeta 1.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img alt="Tarjeta 2" src="ruta-imagen2.jpg" />
-          </div>
-          <div class="card-description">
-            <h3>Tarjeta 2</h3>
-            <p>Descripción de la tarjeta 2.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">
-            <img alt="Tarjeta 3" src="ruta-imagen3.jpg" />
-          </div>
-          <div class="card-description">
-            <h3>Tarjeta 3</h3>
-            <p>Descripción de la tarjeta 3.</p>
-          </div>
-        </div>
-      </section>
+            <div class="contact-info">
+              <div class="icon-text">
+                <i class="fas fa-phone"></i>
+                <p>+58 424-9578954</p>
+              </div>
+              <div class="icon-text">
+                <i class="fas fa-envelope"></i>
+                <p>pokedex@gmail.com</p>
+              </div>
+              <div class="icon-text">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>UCAB GUAYANA</p>
+              </div>
+            </div>
 
-      <section class="card-row">
-        <div class="card">
-          <div class="card-image">
-            <img alt="Tarjeta 4" src="ruta-imagen4.jpg" />
-          </div>
-          <div class="card-description">
-            <h3>Tarjeta 4</h3>
-            <p>Descripción de la tarjeta 4.</p>
+            <div class="social-media">
+              <h3>Encuéntranos</h3>
+              <a
+                class="social-icon"
+                href="https://www.youtube.com"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                class="social-icon"
+                href="https://www.twitter.com"
+                target="_blank"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                class="social-icon"
+                href="https://www.tiktok.com"
+                target="_blank"
+              >
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image">
-            <img alt="Tarjeta 5" src="ruta-imagen5.jpg" />
-          </div>
-          <div class="card-description">
-            <h3>Tarjeta 5</h3>
-            <p>Descripción de la tarjeta 5.</p>
-          </div>
+
+        <div class="column">
+          <form id="contact_form">
+            <h2>Formulario de contacto</h2>
+            <label for="name">Nombre y Apellido:</label>
+            <input id="name" type="text" name="name" required />
+
+            <label for="phone">Teléfono:</label>
+            <input id="phone" type="tel" name="phone" required />
+
+            <label for="email">Correo:</label>
+            <input id="email" type="email" name="email" required />
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
