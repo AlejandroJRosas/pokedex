@@ -4,6 +4,17 @@ body {
   margin: 0;
   background-color: #ECE1D5
 }
+main h2 {
+  padding-top: 2em;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #691291;
+  font-size: 3.5em;
+}
+
+.project-description .text-container h2 {
+  font-size: 3.5em;
+}
 
 /* Navbar styles */
 .navbar {
