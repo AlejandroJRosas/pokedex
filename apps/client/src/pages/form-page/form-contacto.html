@@ -54,6 +54,7 @@
     </header>
 
     <main>
+      <h2>Objetivos de Desarrollo Sostenible</h2>
       <div class="slider-box">
         <ul>
           <li>
@@ -160,75 +161,79 @@
           </li>
         </ul>
       </div>
-
-      <div class="contact-form-container">
-        <div class="column left-column">
-          <div class="overlay">
-            <h2>Contáctanos</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              imperdiet, nulla et dictum interdum.
-            </p>
-
-            <div class="contact-info">
-              <div class="icon-text">
-                <i class="fas fa-phone"></i>
-                <p>+58 424-9578954</p>
-              </div>
-              <div class="icon-text">
-                <i class="fas fa-envelope"></i>
-                <p>pokedex@gmail.com</p>
-              </div>
-              <div class="icon-text">
-                <i class="fas fa-map-marker-alt"></i>
-                <p>UCAB GUAYANA</p>
-              </div>
+      <div id="contact-form">
+        <h2>Formulario de Contacto</h2>
+        <div id="form-container">        
+          <div id="info-container">
+            <div id="description">
+              <h3>Ubícanos</h3>
+              <p>
+                Una vez completado el formulario de contacto, nuestro equipo se comunicará contigo. Si deseas una
+                respuesta más personalizada, te recomendamos comunicarte con nosotros a través de nuestro correo, teléfono o redes
+                sociales, te esperamos!
+              </p>
             </div>
-
-            <div class="social-media">
-              <h3>Encuéntranos</h3>
-              <a
-                class="social-icon"
-                href="https://www.youtube.com"
-                target="_blank"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
-              <a
-                class="social-icon"
-                href="https://www.twitter.com"
-                target="_blank"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a
-                class="social-icon"
-                href="https://www.tiktok.com"
-                target="_blank"
-              >
-                <i class="fab fa-tiktok"></i>
-              </a>
+            <div id="contact-details">
+              <div id="formal-info">
+                <h3>Información de Contacto</h3>
+                <div class="icon-text">
+                  <i class="fas fa-phone"></i>
+                  <p>+58 424-9578954</p>
+                </div>
+                <div class="icon-text">
+                  <i class="fas fa-envelope"></i>
+                  <p>pokedex@gmail.com</p>
+                </div>
+                <div class="icon-text">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <p>UCAB GUAYANA</p>
+                </div>
+              </div>
+              <div id="social-media-info">
+                <h3>Nuestras Redes Sociales</h3>
+                <div id="social-media-icons">
+                  <a class="social-icon" href="https://www.youtube.com" target="_blank">
+                    <i class="fab fa-youtube"></i></a>
+                  </a>
+                  <a class="social-icon" href="https://www.facebook.com" target="_blank">
+                    <i class="fab fa-facebook-f"></i></a>
+                  </a>
+                  <a class="social-icon" href="https://www.instagram.com" target="_blank">
+                    <i class="fab fa-instagram"></i></a>
+                  </a>
+                  <a class="social-icon" href="https://www.twitter.com" target="_blank">
+                    <i class="fab fa-twitter"></i></a>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="column">
-          <form id="contact_form">
-            <h2>Formulario de contacto</h2>
-            <label for="name">Nombre y Apellido:</label>
-            <input id="name" type="text" name="name" required />
-
-            <label for="phone">Teléfono:</label>
-            <input id="phone" type="tel" name="phone" required />
-
-            <label for="email">Correo:</label>
-            <input id="email" type="email" name="email" required />
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" required rows="4"></textarea>
-
-            <button type="submit">Enviar</button>
-          </form>
+          <div id="page-form">
+            <form id="contact_form">
+              <h3>Contáctanos</h3>
+              <div id="identification">
+                <label for="name">Nombres</label>
+                <input id="name" type="text" name="name" required placeholder="Lionel Andrés">
+  
+                <label for="name">Apellidos</label>
+                <input id="name" type="text" name="name" required placeholder="Messi Cuccittini">
+              </div>
+              <div id="personal-contact">
+                <label for="phone">Teléfono</label>
+                <input id="phone" type="tel" name="phone" required placeholder="04140987503">
+  
+                <label for="email">Correo</label>
+                <input id="email" type="email" name="email" required placeholder="leomessi@gmail.com">
+              </div>
+              <div id="message">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" required rows="3" placeholder="Saludos al equipo de desarrollo!"></textarea>
+              </div>
+              <div id="send-btn">
+                <button id="send-form" type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
