@@ -18,8 +18,11 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #FDE6D8;
+  background-color: #ECE1D5;
 }
+
+/* #FDE6D8*/
+/* #D7D3D9 */
 
 main h2 {
   padding-top: 2em;
