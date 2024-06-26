@@ -93,6 +93,14 @@ img {
 
 /*Main*/
 
+main h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #691291;
+  font-size: 28px;
+}
+
 /*Filtros*/
 
 .tab-tipos {
@@ -258,9 +266,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   border-radius: 10px;
-  padding: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -269,12 +275,14 @@ button {
   justify-content: center;
   background: #dfdfdf;
   margin-bottom: 0.5em;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .pokemon-card img {
   width: 200px;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   align-self: center;
   padding: 10px;
 }
@@ -282,6 +290,10 @@ button {
 .numero_pokemon {
   margin-bottom: 1em;
   color: rgb(0, 0, 0, 0.4);
+}
+
+.pokemon-info {
+  padding: 1em;
 }
 
 .tipos {
