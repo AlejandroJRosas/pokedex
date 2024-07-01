@@ -1,27 +1,30 @@
 import { Request, Response } from 'express';
-import { HTTP_CODE } from '../../../utils/http-code';
+import { HTTP_CODE } from 'shared/utils/http-code';
+import PokemonDB from 'database/pokemon-db.json';
+import { PokemonSpecie } from 'shared/types/pokemon';
+import {
+  PaginateSettings,
+  paginatedItemsResponse
+} from 'shared/types/dto/paginated-response';
 
-export async function getPokemons(_req: Request, res: Response) {
-  try {
-    const pokemonsResponse = await fetch(
-      'https://pokeapi.co/api/v2/pokemon-species?limit=5',
-      {
-        method: 'GET'
-      }
-    );
+export function getPokemons(req: Request, res: Response) {
+  const { currentPage = 1, itemsPerPage = 5 } = req.query;
 
-    const pokemons = await pokemonsResponse.json();
+  let offset = (Number(currentPage) - 1) * Number(itemsPerPage);
 
-    const pokemonDetailedResponse = await fetch(pokemons.results[0].url, {
-      method: 'GET'
-    });
-
-    const pokemonDetailed = await pokemonDetailedResponse.json();
-
-    res
-      .status(HTTP_CODE.OK)
-      .json({ pokemons, habitat: pokemonDetailed.habitat.name });
-  } catch (error) {
-    console.log(error);
+  if (Number(currentPage) < 1) {
+    offset = 0;
   }
+
+  const db = PokemonDB as PokemonSpecie[];
+
+  const pokemonsInPage = db.slice(offset, offset + Number(itemsPerPage));
+
+  const pagination: PaginateSettings = {
+    currentPage: Number(currentPage),
+    itemsPerPage: Number(itemsPerPage),
+    totalItems: db.length
+  };
+
+  return paginatedItemsResponse(res, HTTP_CODE.OK, pagination, pokemonsInPage);
 }

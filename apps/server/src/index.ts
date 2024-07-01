@@ -1,18 +1,17 @@
+import cors from 'cors';
 import express from 'express';
 import morgan from 'morgan';
-import cors from 'cors';
 import { serve, setup } from 'swagger-ui-express';
-import { swaggerSpec } from './core/swagger';
-
-import { PORT } from './config';
-import { router } from './core/_routes';
-import { cache } from './utils/cache-config';
+import { router } from 'core/_routes';
+import { swaggerSpec } from 'core/swagger';
+import { cache } from 'shared/utils/cache-config';
+import { PORT } from 'shared/config';
 
 // App Declaration
 const app = express();
 
 // Settings
-app.set('port', PORT != null || 3000);
+app.set('port', PORT || 3000);
 
 // Middlewares
 app.use(morgan('dev'));
