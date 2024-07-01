@@ -2,11 +2,11 @@ import fs from 'fs';
 import { PokemonSpecieListResponse } from './type/pokemon-specie-list-response';
 import { PokemonSpecieResponse } from './type/pokemon-specie-response';
 import { PokemonDataResponse } from './type/pokemon-response';
+import { PokemonSpecie } from '../shared/types/pokemon';
+import { PokemonColor } from '../shared/types/pokemon/color';
+import { PokemonHabitat } from '../shared/types/pokemon/habitat';
+import { PokemonType } from '../shared/types/pokemon/pokemon-type';
 // import { EvolutionChainResponse } from './type/evolution-chain-response';
-import { PokemonSpecie } from 'shared/types/pokemon';
-import { PokemonColor } from 'shared/types/pokemon/color';
-import { PokemonHabitat } from 'shared/types/pokemon/habitat';
-import { PokemonType } from 'shared/types/pokemon/pokemon-type';
 
 async function getAllPokemonsSpecies(): Promise<PokemonSpecie[]> {
   try {

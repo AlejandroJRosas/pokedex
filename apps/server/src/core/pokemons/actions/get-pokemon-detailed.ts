@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
-import { HTTP_CODE } from 'shared/utils/http-code';
-import PokemonDB from 'database/pokemon-db.json';
-import { PokemonSpecie } from 'shared/types/pokemon';
+import PokemonDB from '../../../database/pokemon-db.json';
+import { PokemonSpecie } from '../../../shared/types/pokemon';
+import { HTTP_CODE } from '../../../shared/utils/http-code';
 
 export function getPokemonDetailed(req: Request, res: Response) {
   const { pokemonId } = req.params;

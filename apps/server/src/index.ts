@@ -2,10 +2,10 @@ import cors from 'cors';
 import express from 'express';
 import morgan from 'morgan';
 import { serve, setup } from 'swagger-ui-express';
-import { router } from 'core/_routes';
-import { swaggerSpec } from 'core/swagger';
-import { cache } from 'shared/utils/cache-config';
-import { PORT } from 'shared/config';
+import { router } from './core/_routes';
+import { swaggerSpec } from './core/swagger';
+import { cache } from './shared/utils/cache-config';
+import { PORT } from './shared/config';
 
 // App Declaration
 const app = express();

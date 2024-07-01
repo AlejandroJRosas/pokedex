@@ -1,11 +1,11 @@
 import { Request, Response } from 'express';
-import { HTTP_CODE } from 'shared/utils/http-code';
-import PokemonDB from 'database/pokemon-db.json';
-import { PokemonSpecie } from 'shared/types/pokemon';
+import PokemonDB from '../../../database/pokemon-db.json';
+import { PokemonSpecie } from '../../../shared/types/pokemon';
+import { HTTP_CODE } from '../../../shared/utils/http-code';
 import {
   PaginateSettings,
   paginatedItemsResponse
-} from 'shared/types/dto/paginated-response';
+} from '../../../shared/types/dto/paginated-response';
 
 export function getPokemons(req: Request, res: Response) {
   const { currentPage = 1, itemsPerPage = 5 } = req.query;

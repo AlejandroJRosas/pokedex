@@ -11,10 +11,6 @@
     "noUnusedParameters": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
-    "skipLibCheck": true,
-    "baseUrl": "./src",
-    "paths": {
-      "*": ["*"]
-    }
+    "skipLibCheck": true
   }
 }
