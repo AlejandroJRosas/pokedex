@@ -2,6 +2,7 @@ import { PokemonColor } from './color';
 import { PokemonHabitat } from './habitat';
 import { PokemonType } from './pokemon-type';
 import { BaseStats } from './base-stats';
+// import { EvolutionChain } from './evolution-chain';
 
 export type PokemonSpecie = {
   id: number;
@@ -16,6 +17,7 @@ export type PokemonSpecie = {
   cry: string;
   baseStats: BaseStats;
   sprites: [string, string];
+  // evolutionChain: EvolutionChain[];
 };
 
 export type PokemonMinimalInfo = Pick<
