@@ -1,7 +1,13 @@
 import { Router } from 'express';
 import { HTTP_CODE } from '../../shared/utils/http-code';
-import pokemonRouter from '../pokemons/pokemons.routes';
-import { LoadDatabase } from '../../database/load-database';
+import {
+  // loadDatabase,
+  loadItems,
+  loadPokemons
+} from '../../database/load-database';
+
+import pokemonsRouter from '../pokemons/pokemons.routes';
+import itemsRouter from '../items/items.routes';
 
 export const router = Router();
 
@@ -12,13 +18,21 @@ router.get('/ping', (_req, res) => {
     .json({ message: 'Backend running - Hello World! 🏍' });
 });
 
-router.get('/load', (_req, res) => {
-  LoadDatabase();
-  res
-    .status(HTTP_CODE.OK)
-    .json({ message: 'Backend running - Hello World! 🏍' });
+// router.get('/load', (_req, res) => {
+//   loadDatabase();
+//   res.status(HTTP_CODE.OK).json({ message: 'Web Scrap Started!' });
+// });
+
+router.get('/load-pokemons', (_req, res) => {
+  loadPokemons();
+  res.status(HTTP_CODE.OK).json({ message: 'Web Scrap Started!' });
+});
+
+router.get('/load-items', (_req, res) => {
+  loadItems();
+  res.status(HTTP_CODE.OK).json({ message: 'Web Scrap Started!' });
 });
 
 // Public Routes
-router.use('/pokemons', pokemonRouter);
-// router.use('/objects', objectsRouter);
+router.use('/pokemons', pokemonsRouter);
+router.use('/items', itemsRouter);
