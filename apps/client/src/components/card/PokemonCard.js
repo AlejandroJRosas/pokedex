@@ -64,6 +64,7 @@ class PokemonCard extends HTMLElement {
       <style>${PokemonCard.styles}</style>
 
       <div class="card">
+      <h1>pokemon</h1>
         <img class="image" src="${this.pokemon.image}" alt="${this.pokemon.name}">
         <h2>${this.pokemon.name}</h2>
         <p>Número de Pokédex: ${this.pokemon.pokedexNumber}</p>
