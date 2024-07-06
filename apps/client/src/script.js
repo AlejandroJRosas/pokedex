@@ -1,24 +1,29 @@
 import './components/card/PokemonCard';
 import './components/navbar/Navbar';
+import './components/carrusel/Carrusel';
 
 window.onload = function () {
   const path = window.location.pathname.split('/');
 
   switch (path[1]) {
     case '': {
-      loadPage('home');
+      loadPage('catalogo-page');
       break;
     }
-    case 'about': {
-      loadPage('about');
+    case 'detail-page': {
+      loadPage('detail-page');
       break;
     }
-    case 'test': {
-      loadPage('test');
+    case 'form-page': {
+      loadPage('form-page');
       break;
     }
-    case 'detail': {
-      loadPage('detail');
+    case 'integrantes-page': {
+      loadPage('integrantes-page');
+      break;
+    }
+    case 'objects-page': {
+      loadPage('objects-page');
       break;
     }
     default: {

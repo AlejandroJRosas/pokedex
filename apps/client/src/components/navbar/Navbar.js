@@ -12,22 +12,121 @@ class Navbar extends HTMLElement {
     this.shadowRoot.innerHTML = /* html */ `
       <style>
         .navbar {
-          display: flex;
-          justify-content: space-between;
-          background-color: #dde0ff;
-          padding: 1rem;
-          border-radius: 5px;
-        }
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1em;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+}
 
-        .navbar-item {
-          margin-right: 1rem;
-        }
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+  padding-right: 2.5em;
+}
+
+.social-media .social-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media .social-icon:hover {
+  color: #f55d3e;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  background-color: #575757;
+  color: #f55d3e;
+}
       </style>
+
+      <header>
       <nav class="navbar">
-        <div class="navbar-item">Home</div>
-        <div class="navbar-item">Test</div>
-        <div class="navbar-item">About</div>
+        <div class="navbar-container">
+          <a class="navbar-logo" href="https://pokeapi.co/">
+            <img alt="Logo" src="/logo.png" />
+          </a>
+          <ul class="navbar-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="objects-page">Objetos</a></li>
+            <li>
+              <a href="integrantes-page">Integrantes</a>
+            </li>
+            <li>
+              <a href="form-page">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a class="social-icon" href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            class="social-icon"
+            href="https://www.facebook.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a class="social-icon" href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            class="social-icon"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
       </nav>
+    </header>
+
     `;
   }
 }

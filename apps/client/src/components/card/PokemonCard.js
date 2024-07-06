@@ -62,14 +62,20 @@ class PokemonCard extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = /* html */ `
       <style>${PokemonCard.styles}</style>
-
-      <div class="card">
-      <h1>pokemon</h1>
-        <img class="image" src="${this.pokemon.image}" alt="${this.pokemon.name}">
-        <h2>${this.pokemon.name}</h2>
-        <p>Número de Pokédex: ${this.pokemon.pokedexNumber}</p>
-        <div class="type">Tipo: ${this.pokemon.type[1]}</div>
-      </div>
+        <div class="pokemon-card">
+          <div class="img-container">
+            <img class="image" src="${this.pokemon.image}" alt="${this.pokemon.name}">
+          </div>
+          <div class="pokemon-info">
+            <p class="numero_pokemon">${this.pokemon.pokedexNumber}</p>
+            <p>${this.pokemon.name}</p>
+            <div class="tipos">
+              <p>${this.pokemon.type[0]}</p>
+              <p>${this.pokemon.type[1]}</p>
+            </div>
+          </div>
+        </div>
+      </section>
     `;
   }
 }

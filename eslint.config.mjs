@@ -35,8 +35,7 @@ export default [
       '@html-eslint/indent': ['warn', 'tab' | 2],
       '@html-eslint/lowercase': 'error',
       '@html-eslint/no-multiple-empty-lines': 'warn',
-      '@html-eslint/no-trailing-spaces': 'warn',
-      '@html-eslint/sort-attrs': 'error'
+      '@html-eslint/no-trailing-spaces': 'warn'
     }
   }
 ];
