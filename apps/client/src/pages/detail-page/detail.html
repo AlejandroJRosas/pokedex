@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Detalle Pokemon</title>
+    <meta content="widht=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="author"
+      content="Sebastian Gonzalez, Angel Patiño, Daniel Perdomo, Anna Cadena, Alejandro Rosas"
+    />
+    <meta
+      name="description"
+      content="Pagina que contiene informacion detallada sobre un pokemon en especifico"
+    />
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <link
+      href="/apps/client/src/pages/detail-page/detail.css"
+      rel="stylesheet"
+    />
+    <link
+      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      referrerpolicy="no-referrer"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pixelify+Sans:wght@400..700&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a class="navbar-logo" href="https://pokeapi.co/">
+            <img alt="Logo" src="/logo.png" />
+          </a>
+          <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="../catalogo-page/catalogo-pokemon.html">Pokedex</a>
+            </li>
+            <li><a href="../objects-page/objects.html">Objetos</a></li>
+            <li>
+              <a href="../integrantes-page/integrantes.html"> Integrantes </a>
+            </li>
+            <li>
+              <a href="../form-page/form-contacto.html"> Contacto </a>
+            </li>
+          </ul>
+        </div>
+        <div class="social-media">
+          <a class="social-icon" href="https://www.youtube.com" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a
+            class="social-icon"
+            href="https://www.facebook.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a class="social-icon" href="https://www.twitter.com" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            class="social-icon"
+            href="https://www.instagram.com"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="pokemon-container">
+        <img
+          alt="Imagen del Pokemon"
+          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
+        />
+        <div class="name-container">
+          <span>Bullbasaur</span>
+          <span>Numero: 001</span>
+        </div>
+        <audio controls>
+          <source
+            type="audio/mp3"
+            src="/apps/client/src/pages/detail-page/public/Audios/Pokemon – Black and White full.mp3"
+          />
+        </audio>
+      </section>
+
+      <section class="pokemon-info-container">
+        <div>
+          <h3>Descripción</h3>
+          <p>
+            Tras nacer, crece alimentándose durante un tiempo de los nutrientes
+            que contiene el bulbo de su lomo.
+          </p>
+        </div>
+        <div>
+          <h3>Tipos</h3>
+          <ul>
+            <li>Planta</li>
+            <li>Veneno</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Altura</h3>
+          <p>0.7 m</p>
+          <h3>Peso</h3>
+          <p>6.9 kg</p>
+        </div>
+        <div>
+          <h3>Debilidades</h3>
+          <ul>
+            <li>Fuego</li>
+            <li>Volador</li>
+            <li>Psíquico</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="pokemon-stats-container">
+        <div class="skill">
+          <p>PS<span>95%</span></p>
+          <div class="progress" style="--wth: 90%"></div>
+        </div>
+        <div class="skill">
+          <p>ATTACK<span>80%</span></p>
+          <div class="progress" style="--wth: 80%"></div>
+        </div>
+        <div class="skill">
+          <p>SPECIAL ATTACK<span>70%</span></p>
+          <div class="progress" style="--wth: 70%"></div>
+        </div>
+        <div class="skill">
+          <p>DEFENSE<span>90%</span></p>
+          <div class="progress" style="--wth: 90%"></div>
+        </div>
+        <div class="skill">
+          <p>SPECIAL DEFENSE<span>85%</span></p>
+          <div class="progress" style="--wth: 85%"></div>
+        </div>
+        <div class="skill">
+          <p>SPEED<span>70%</span></p>
+          <div class="progress" style="--wth: 70%"></div>
+        </div>
+      </section>
+
+      <section class="pokemon-evolution-container">
+        <img
+          alt="Bullbasaur"
+          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
+        />
+        <i id="flecha" class="fa-solid fa-arrow-left">&nbsp;</i>
+        <img
+          alt="Bullbasaur"
+          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
+        />
+        <i id="flecha2" class="fa-solid fa-arrow-left">&nbsp;</i>
+        <img
+          alt="Bullbasaur"
+          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
+        />
+      </section>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados &copy;</p>
+    </footer>
+  </body>
+</html>
