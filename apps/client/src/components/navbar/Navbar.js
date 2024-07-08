@@ -89,7 +89,7 @@ class Navbar extends HTMLElement {
       <nav class="navbar">
         <div class="navbar-container">
           <a class="navbar-logo" href="https://pokeapi.co/">
-            <img alt="Logo" src="/logo.png" />
+            <img alt="Logo" src="../components/navbar/imagenes/logo.png" />
           </a>
           <ul class="navbar-menu">
             <li><a href="/">Home</a></li>

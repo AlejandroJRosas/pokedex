@@ -7,51 +7,54 @@ class PokemonCard extends HTMLElement {
 
   static get styles() {
     return /* css */ `
-    .card {
-      width: 300px;
-      background-color: #f5f5f5;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      position: relative;
-    }
+    .catalogo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em 1em;
+  padding: 1em;
+  margin: 2em;
+}
 
-    .card img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin-bottom: 10px;
-    }
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    .card .pokedex-number {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 14px;
-      color: #888;
-    }
+.img-container {
+  display: flex;
+  justify-content: center;
+  background: #dfdfdf;
+  margin-bottom: 0.5em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-    .card h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
+.pokemon-card img {
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-self: center;
+  padding: 10px;
+}
 
-    .card p {
-      font-size: 16px;
-      color: #888;
-      margin-bottom: 10px;
-    }
+.numero_pokemon {
+  margin-bottom: 1em;
+  color: rgb(0, 0, 0, 0.4);
+}
 
-    .card .type {
-      display: inline-block;
-      padding: 5px 10px;
-      background-color: #f2f2f2;
-      border-radius: 5px;
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 10px;
-    }
+.pokemon-info {
+  padding: 1em;
+}
+
+.tipos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.5em;
+}
+
     `;
   }
 

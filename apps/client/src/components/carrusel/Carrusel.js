@@ -154,103 +154,103 @@ body {
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/1.png"
+              src="../components/carrusel/img/1.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/2.png"
+              src="../components/carrusel/img/2.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/3.png"
+              src="../components/carrusel/img/3.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/4.png"
+              src="../components/carrusel/img/4.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/5.png"
+              src="../components/carrusel/img/5.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/6.png"
+              src="../components/carrusel/img/6.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/7.png"
+              src="../components/carrusel/img/7.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/8.png"
+              src="../components/carrusel/img/8.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/9.png"
+              src="../components/carrusel/img/9.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/10.png"
+              src="../components/carrusel/img/10.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/11.png"
+              src="../components/carrusel/img/11.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/12.png"
+              src="../components/carrusel/img/12.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/13.png"
+              src="../components/carrusel/img/13.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/14.png"
+              src="../components/carrusel/img/14.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/15.png"
+              src="../components/carrusel/img/15.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/16.png"
+              src="./components/carrusel/img/16.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="/apps/client/src/pages/carrusel/img/17.png"
+              src="../components/carrusel/img/17.png"
             />
           </li>
         </ul>
