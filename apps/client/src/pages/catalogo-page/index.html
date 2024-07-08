@@ -3,22 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Catalogo</title>
     <meta
       name="author"
       content="Sebastian Gonzalez, Angel Patiño, Daniel Perdomo, Anna Cadena, Alejandro Rosas"
     />
     <meta
       name="description"
-      content="Pagina que contiene el catalogo de pokemones, esta sera una pagina clave de la Pokedex"
+      content="Pagina que contiene el catalogo de pokemones, esta será una página clave de la Pokedex"
     />
-    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
-    <link href="../pages/catalogo-page/stylesCatalogo.css" rel="stylesheet" />
+    <!-- <link rel="icon" href="../../logo.png" type="image" /> -->
+    <link href="stylesCatalogo.css" rel="stylesheet" />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
-    <script type="module" src="../pages/catalogo-page/catalogo.js"></script>
     <!-- Font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,8 +24,11 @@
       href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <script type="module" src="index.js"></script>
+    <title>Catalogo</title>
   </head>
   <body>
+    <navbar-component></navbar-component>
     <main>
       <div class="tab-tipos">
         <button id="btn_filtros" type="button">Filtros</button>
@@ -56,12 +57,8 @@
       </div>
 
       <h2>Listado de Pokemón</h2>
-      <section class="catalogo-container">
-        <pokemon-card
-          pokemon='{"name":"Pikachu","image":"https://i.pinimg.com/originals/16/d3/2e/16d32e6bbc6ddb8bb084fcc767a22acf.gif","pokedexNumber":25,"type":["Electrico", "Agua"]}'
-        >
-        </pokemon-card>
-      </section>
+      <section class="catalogo-container"></section>
+      <button type="button" class="button">Cargar más</button>
     </main>
     <footer>
       <p>Todos los derechos reservados &copy;</p>

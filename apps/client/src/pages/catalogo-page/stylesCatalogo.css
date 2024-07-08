@@ -228,6 +228,18 @@ button {
 
 /*Footer*/
 
+.button {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+.button:hover {
+  color: #f55d3e;
+}
+
 footer {
   display: flex;
   justify-content: center;

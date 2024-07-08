@@ -52,10 +52,7 @@ window.onload = function () {
 
     const request = new XMLHttpRequest();
     request.open('GET', './pages' + '/' + $path + '/' + 'index' + '.html');
-    console.log('GET', './pages' + '/' + $path + '/' + 'index' + '.html');
 
-    const url = new URL(window.location.href);
-    console.log('Pathname: ', url);
     request.send();
     request.onload = function () {
       if (request.status == 200) {
