@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 /*Global*/
 *::after,
 *::before,
@@ -15,6 +17,25 @@ body {
 img {
   max-width: 100%;
 }
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 2rem 0;
+}
+
+/* .objects-container {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+} */
 
 /*Header*/
 /* Navbar styles */
@@ -150,6 +171,19 @@ main h2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 0.5em;
+}
+
+.button {
+  font-family: 'Pixelify Sans';
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.25s ease;
+}
+.button:hover {
+  color: #f55d3e;
 }
 
 /*Footer*/

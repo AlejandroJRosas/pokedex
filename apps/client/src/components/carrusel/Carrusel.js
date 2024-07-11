@@ -1,4 +1,6 @@
 class Carrusel extends HTMLElement {
+  BASE_URL = 'http://127.0.0.1:5500/apps/client/src/assets/carrusel';
+
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -154,103 +156,103 @@ body {
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/1.png"
+              src="${this.BASE_URL}/1.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/2.png"
+              src="${this.BASE_URL}/2.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/3.png"
+              src="${this.BASE_URL}/3.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/4.png"
+              src="${this.BASE_URL}/4.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/5.png"
+              src="${this.BASE_URL}/5.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/6.png"
+              src="${this.BASE_URL}/6.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/7.png"
+              src="${this.BASE_URL}/7.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/8.png"
+              src="${this.BASE_URL}/8.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/9.png"
+              src="${this.BASE_URL}/9.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/10.png"
+              src="${this.BASE_URL}/10.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/11.png"
+              src="${this.BASE_URL}/11.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/12.png"
+              src="${this.BASE_URL}/12.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/13.png"
+              src="${this.BASE_URL}/13.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/14.png"
+              src="${this.BASE_URL}/14.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/15.png"
+              src="${this.BASE_URL}/15.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="./components/carrusel/img/16.png"
+              src="${this.BASE_URL}/16.png"
             />
           </li>
           <li>
             <img
               alt="Ods_foto"
-              src="../components/carrusel/img/17.png"
+              src="${this.BASE_URL}/17.png"
             />
           </li>
         </ul>

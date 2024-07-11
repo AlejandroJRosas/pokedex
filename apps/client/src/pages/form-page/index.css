@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -8,6 +10,7 @@
 
 body {
   font-family: 'Pixelify Sans';
+  background-color: #ece1d5;
 }
 
 main {

@@ -1,4 +1,6 @@
 class Navbar extends HTMLElement {
+  BASE_URL = 'http://127.0.0.1:5500';
+
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -88,17 +90,17 @@ class Navbar extends HTMLElement {
       <header>
       <nav class="navbar">
         <div class="navbar-container">
-          <a class="navbar-logo" href="https://pokeapi.co/">
+          <a class="navbar-logo" href="https://pokeapi.co/" target="_blank">
             <img alt="Logo" src="../../components/navbar/imagenes/logo.png" />
           </a>
           <ul class="navbar-menu">
-            <li><a href="/">Home</a></li>
-            <li><a href="objects-page">Objetos</a></li>
+            <li><a href="${this.BASE_URL}/apps/client/src/pages/catalogo-page">Home</a></li>
+            <li><a href="${this.BASE_URL}/apps/client/src/pages/objects-page">Objetos</a></li>
             <li>
-              <a href="integrantes-page">Integrantes</a>
+              <a href="${this.BASE_URL}/apps/client/src/pages/integrantes-page">Integrantes</a>
             </li>
             <li>
-              <a href="form-page">Contacto</a>
+              <a href="${this.BASE_URL}/apps/client/src/pages/form-page">Contacto</a>
             </li>
           </ul>
         </div>
