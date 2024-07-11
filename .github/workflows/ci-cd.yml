@@ -22,4 +22,4 @@ jobs:
             git pull
             pnpm install
             pnpm build
-            pm2 restart poke-backend && kill $!
+            pm2 restart poke-backend
