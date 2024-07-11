@@ -1,0 +1,315 @@
+/*Global*/
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pixelify Sans';
+  background-color: #ECE1D5
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Header*/
+/* Navbar styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #333;
+  padding: 1em;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  position: relative;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+  padding-right: 2.5em;
+}
+
+.social-media .social-icon {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-media .social-icon:hover {
+  color: #F55D3E;
+}
+
+.navbar-logo img {
+  height: 40px;
+  margin-right: 20px;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-right: 10px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+
+.navbar-menu a:hover {
+  background-color: #575757;
+  color: #F55D3E;
+}
+
+/*Main*/
+
+main h2 {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #691291;
+  font-size: 3.5em;
+}
+
+/*Filtros*/
+
+.tab-tipos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+  background-attachment: fixed;
+}
+
+button {
+  font-family: 'Pixelify Sans';
+}
+
+#btn_filtros {
+  background-color: #727f7dbd;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid #333;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100px;
+  align-self: center;
+}
+
+.contenedor-filtros {
+  display: none;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 5px 5px 20px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  width: 550px;
+  align-self: center;
+}
+
+.filtro-tipos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  padding: 0;
+}
+
+.filtro-tipos li {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+.filtro-tipos li button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Asegura que todos los botones tengan el mismo ancho */
+  padding: 0.5em;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+#fuego {
+  background: #f55d3e;
+  color: white;
+}
+
+#agua {
+  background: #55a2d6;
+  color: white;
+}
+
+#planta {
+  background: #55d65d;
+  color: white;
+}
+
+#electrico {
+  background: #f5d63e;
+  color: white;
+}
+
+#roca {
+  background: #b96a42;
+  color: white;
+}
+
+#volador {
+  background: #a2d6d6;
+  color: white;
+}
+
+#veneno {
+  background: #d655d6;
+  color: white;
+}
+
+#psiquico {
+  background: #f44bdb;
+  color: white;
+}
+
+#bicho {
+  background: #d6d655;
+  color: white;
+}
+
+#tierra {
+  background: #d6b655;
+  color: white;
+}
+
+#lucha {
+  background: #d65555;
+  color: white;
+}
+
+#fantasma {
+  background: #6a42b9;
+  color: white;
+}
+
+#hada {
+  background: #f5a2d6;
+  color: white;
+}
+
+#siniestro {
+  background: #6a6a6a;
+  color: white;
+}
+
+#acero {
+  background: #9b9b9b;
+  color: white;
+}
+
+#hielo {
+  background: #55d6d6;
+  color: white;
+}
+
+#dragon {
+  background: #6a42b9;
+  color: white;
+}
+
+#normal {
+  background: #c2c1c1;
+  color: white;
+}
+
+/*Catalogo Pokemon*/
+
+.catalogo-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em 1em;
+  padding: 1em;
+  margin: 2em;
+}
+
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  background: #dfdfdf;
+  margin-bottom: 0.5em;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.pokemon-card img {
+  width: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  align-self: center;
+  padding: 10px;
+}
+
+.numero_pokemon {
+  margin-bottom: 1em;
+  color: rgb(0, 0, 0, 0.4);
+}
+
+.pokemon-info {
+  padding: 1em;
+}
+
+.tipos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 0.5em;
+}
+
+/*Footer*/
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #466365;
+  height: 5em;
+  border-top: 2px solid #000000;
+  color: white;
+}

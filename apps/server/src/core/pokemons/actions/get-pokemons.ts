@@ -1,27 +1,72 @@
 import { Request, Response } from 'express';
-import { HTTP_CODE } from '../../../utils/http-code';
+import PokemonDB from '../../../database/pokemon-db.json';
+import { PokemonSpecie } from '../../../shared/types/pokemon';
+import { HTTP_CODE } from '../../../shared/utils/http-code';
+import {
+  PaginateSettings,
+  paginatedItemsResponse
+} from '../../../shared/types/dto/paginated-response';
+import { PokemonType } from '../../../shared/types/pokemon/pokemon-type';
 
-export async function getPokemons(_req: Request, res: Response) {
-  try {
-    const pokemonsResponse = await fetch(
-      'https://pokeapi.co/api/v2/pokemon-species?limit=5',
-      {
-        method: 'GET'
-      }
-    );
+export function getPokemons(req: Request, res: Response) {
+  const {
+    currentPage = 1,
+    itemsPerPage = 5,
+    name,
+    type,
+    weight,
+    height
+  } = req.query;
 
-    const pokemons = await pokemonsResponse.json();
+  let offset = (Number(currentPage) - 1) * Number(itemsPerPage);
 
-    const pokemonDetailedResponse = await fetch(pokemons.results[0].url, {
-      method: 'GET'
-    });
-
-    const pokemonDetailed = await pokemonDetailedResponse.json();
-
-    res
-      .status(HTTP_CODE.OK)
-      .json({ pokemons, habitat: pokemonDetailed.habitat.name });
-  } catch (error) {
-    console.log(error);
+  if (Number(currentPage) < 1) {
+    offset = 0;
   }
+
+  let db = PokemonDB as PokemonSpecie[];
+
+  if (name) {
+    db = db.filter((pokemon) =>
+      pokemon.name.toLowerCase().includes((name as string).toLowerCase())
+    );
+  }
+
+  if (type && typeof type === 'string') {
+    const typeList = type.split(',');
+
+    if (typeList.length === 1) {
+      db = db.filter((pokemon) =>
+        pokemon.type.some((pokemonType) =>
+          typeList.includes(pokemonType as PokemonType)
+        )
+      );
+    }
+
+    if (typeList.length === 2) {
+      db = db.filter((pokemon) =>
+        pokemon.type.every((pokemonType) =>
+          typeList.includes(pokemonType as PokemonType)
+        )
+      );
+    }
+  }
+
+  if (weight) {
+    db = db.filter((pokemon) => pokemon.weight === Number(weight));
+  }
+
+  if (height) {
+    db = db.filter((pokemon) => pokemon.height === Number(height));
+  }
+
+  const pokemonsInPage = db.slice(offset, offset + Number(itemsPerPage));
+
+  const pagination: PaginateSettings = {
+    currentPage: Number(currentPage),
+    itemsPerPage: Number(itemsPerPage),
+    totalItems: db.length
+  };
+
+  return paginatedItemsResponse(res, HTTP_CODE.OK, pagination, pokemonsInPage);
 }
