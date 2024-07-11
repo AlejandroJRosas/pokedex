@@ -34,7 +34,7 @@ While standing on the root of the project do the following:
 
 ## API Documentation
 
-Our Backend is being powered by the PokéApi `https://pokeapi.co/` ⚡
+Our Backend is being powered by the PokéApi `https://pokeapi.co/` ⚡⚡
 
 The Swagger documentation for the backend will be located in `http://localhost:3000/docs`
 

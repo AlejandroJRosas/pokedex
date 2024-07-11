@@ -17,7 +17,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             export PATH="$PATH:/root/.nvm/versions/node/v22.2.0/bin/"
-            cd /var/apps/pokedex
+            cd /var/www/pokedex
             git restore pnpm-lock.yaml
             git pull
             pnpm install
