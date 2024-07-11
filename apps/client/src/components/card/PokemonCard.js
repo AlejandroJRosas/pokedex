@@ -7,54 +7,75 @@ class PokemonCard extends HTMLElement {
 
   static get styles() {
     return /* css */ `
-    .catalogo-container {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 3em 1em;
-      padding: 1em;
-      margin: 2em;
-    }
+  .pokemon-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
 
+  .img-container {
+    text-align: center;
+  }
+
+  .image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .pokemon-info {
+    text-align: center;
+  }
+
+  .numero_pokemon {
+    font-weight: bold;
+    color: #333;
+    font-size: 18px;
+  }
+
+  .tipos {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .tipos p {
+    margin: 5px;
+    padding: 5px;
+    background-color: #B3CBB9;
+    color: #333;
+    border-radius: 5px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #84A9C0;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+
+  a:hover {
+    background-color: #a6c1d1;
+  }
+
+  @media (max-width: 600px) {
     .pokemon-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
     }
-
-    .img-container {
-      display: flex;
-      justify-content: center;
-      background: #dfdfdf;
-      margin-bottom: 0.5em;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-    }
-
-    .pokemon-card img {
-      width: 200px;
-      border-top-left-radius: 10px;
-      border-top-right-radius: 10px;
-      align-self: center;
-      padding: 10px;
-    }
-
-    .numero_pokemon {
-      margin-bottom: 1em;
-      color: rgb(0, 0, 0, 0.4);
-    }
-
-    .pokemon-info {
-      padding: 1em;
-    }
-
-    .tipos {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin-top: 0.5em;
-    }
-
+  }
     `;
   }
 
@@ -76,6 +97,7 @@ class PokemonCard extends HTMLElement {
               <p>${this.pokemon.type[0]}</p>
               <p>${this.pokemon.type[1]}</p>
             </div>
+            <a href="detail-page/${this.pokemon.id}">Ir a detalle</a>
           </div>
         </div>
     `;
