@@ -1,6 +1,6 @@
 export const BASE_URL = 'https://pokedex-backend.playoffside.online/pokemons';
 
-export async function getPokemonsPaginated(id) {
+export async function getDetailedPokemon(id) {
   try {
     const response = await fetch(`${BASE_URL}/${id}`);
 

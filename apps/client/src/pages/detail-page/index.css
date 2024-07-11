@@ -228,11 +228,12 @@ footer {
   height: 5em;
   border-top: 2px solid #000000;
   color: white;
+  
 }
 
 /*Responsive Movil*/
 
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) { */
   /*header*/
   .navbar {
     display: flex;
@@ -242,10 +243,11 @@ footer {
   }
 
   /*main*/
-  main {
-    display: grid;
-    grid-template-columns: 1fr;
+  .main-container {
+    display: flex;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   /*Pokemon*/
@@ -275,7 +277,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 4em;
-    width: 80%;
+    width: 40em;
     background: #00000022;
     padding: 2em 1em;
     margin: 2em auto;
@@ -296,4 +298,3 @@ footer {
     width: 13em;
     margin: 2em 2em;
   }
-}

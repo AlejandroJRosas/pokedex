@@ -2,10 +2,6 @@ class DetailHeading extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-    this.image = this.getAttribute('image');
-    this.name = this.getAttribute('name');
-    this.id = this.getAttribute('id');
-    this.cry = this.getAttribute('cry');
   }
 
   static get styles() {
@@ -40,33 +36,22 @@ class DetailHeading extends HTMLElement {
   render() {
     this.shadowRoot.innerHTML = /* html */ `
     <style>${DetailHeading.styles}</style>
-    <section class="pokemon-info-container">
-      <div>
-        <h3>Descripción</h3>
-        <p>${this.description}</p>
-      </div>
-
-      <div>
-        <h3>Tipos</h3>
-        <ul>
-          <li>${this.type[0]}</li>
-          <li>${this.type[1]}</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Altura</h3>
-        <p>${this.height}</p>
-        <h3>Peso</h3>
-        <p>${this.weigth}</p>
-      </div>
-      <div>
-        <h3>Debilidades</h3>
-        <ul>
-          <li>Fuego</li>
-          <li>Psíquico</li>
-        </ul>
-      </div>
-    </section>`;
+    <section class="pokemon-container">
+        <img
+          alt="Imagen del Pokemon"
+          src="${this.image}"
+        />
+        <div class="name-container">
+          <span>${this.name}</span>
+          <span>Numero: ${this.id}</span>
+        </div>
+        <audio controls>
+          <source
+            type="audio/mp3"
+            src="${this.cry}"
+          />
+        </audio>
+      </section>`;
   }
 }
 
