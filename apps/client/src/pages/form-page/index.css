@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Pixelify Sans';
+  background-color: #ece1d5;
+}
+
+main {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ece1d5;
+}
+
+/* #FDE6D8*/
+/* #D7D3D9 */
+
+main h2 {
+  padding-top: 2em;
+  font-weight: bold;
+  color: #691291;
+  font-size: 3.5em;
+}
+
+/* Form styles */
+h3 {
+  text-align: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+#contact-form h2 {
+  margin: 0 0 1em 0;
+}
+
+#form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fef5ef;
+  width: 80em;
+  border-radius: 1.5em;
+  margin-bottom: 2em;
+}
+
+#info-container {
+  display: flex;
+  flex: 1 1 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+#info-container #description {
+  padding: 1.5em 1em 0em 1em;
+}
+
+#info-container #description h3 {
+  padding: 0 0 0.5em 0;
+  color: #d84654;
+}
+
+#info-container #description p {
+  text-align: center;
+  width: 40em;
+}
+
+#info-container #contact-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding-bottom: 2em;
+}
+
+#info-container #contact-details #formal-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#info-container #contact-details #formal-info h3,
+#info-container #contact-details #formal-info i {
+  padding: 0 0 0.2em 0;
+  color: #d84654;
+}
+
+#info-container #contact-details #formal-info .icon-text i {
+  font-size: 1.5em;
+  color: #f55d3e;
+}
+
+#info-container #social-media-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+#info-container #social-media-icons i {
+  font-size: 1.5em;
+  color: #fcca46;
+}
+
+#info-container #social-media-info h3 {
+  padding: 0 0 0.5em 0;
+  color: #d84654;
+}
+
+#form-container #page-form {
+  flex: 1 1 0px;
+  padding-bottom: 1.4em;
+}
+
+#form-container #page-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8em;
+}
+
+#form-container #page-form h3 {
+  padding: 0 0 0.5em 0;
+  color: #d84654;
+}
+
+label,
+input {
+  display: flex;
+  flex-direction: column;
+}
+
+#identification,
+#personal-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+input {
+  width: 17.5em;
+  height: 2em;
+  text-indent: 0.5em;
+  border-radius: 2.5em;
+  font-family: 'Pixelify Sans';
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-style: italic;
+  font-family: 'Pixelify Sans';
+}
+
+form button {
+  font-family: 'Pixelify Sans';
+  width: 10em;
+  padding: 0.5em 1em;
+  background-color: #d84654;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #f55d3e;
+}
+
+textarea {
+  resize: none;
+  width: 20em;
+  height: 5em;
+  text-indent: 0.5em;
+  border: 2px solid #000000;
+  border-radius: 0.5em;
+  font-family: 'Pixelify Sans';
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #466365;
+  height: 5em;
+  border-top: 2px solid #000000;
+  color: white;
+}
+
+/* queries */
+@media (max-width: 768px) {
+  .contact-form-container {
+    flex-direction: column;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+
+  .contact-info .icon-text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-info .icon-text p {
+    margin: 0;
+  }
+
+  .column:nth-child(2) {
+    order: 1;
+  }
+
+  .column:nth-child(1) {
+    order: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .column {
+    padding: 10px;
+  }
+
+  form input,
+  form textarea {
+    padding: 8px;
+  }
+
+  form button {
+    padding: 8px;
+  }
+
+  .contact-info .icon-text i {
+    font-size: 1.2rem;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+  }
+
+  .social-media .social-icon {
+    font-size: 20px;
+  }
+}

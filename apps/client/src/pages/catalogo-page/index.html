@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      name="author"
+      content="Sebastian Gonzalez, Angel Patiño, Daniel Perdomo, Anna Cadena, Alejandro Rosas"
+    />
+    <meta
+      name="description"
+      content="Pagina que contiene el catalogo de pokemones, esta será una página clave de la Pokedex"
+    />
+    <!-- <link rel="icon" href="../../logo.png" type="image" /> -->
+    <link href="index.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script type="module" src="index.js"></script>
+    <title>Catalogo</title>
+  </head>
+  <body>
+    <navbar-component></navbar-component>
+    <main>
+      <div class="tab-tipos">
+        <button id="btn_filtros" type="button">Filtros</button>
+        <div class="contenedor-filtros">
+          <ul class="filtro-tipos">
+            <li><button id="fuego" type="button">Fuego</button></li>
+            <li><button id="agua" type="button">Agua</button></li>
+            <li><button id="planta" type="button">Planta</button></li>
+            <li><button id="tierra" type="button">Tierra</button></li>
+            <li><button id="volador" type="button">Volador</button></li>
+            <li><button id="roca" type="button">Roca</button></li>
+            <li><button id="bicho" type="button">Bicho</button></li>
+            <li><button id="veneno" type="button">Veneno</button></li>
+            <li><button id="hada" type="button">Hada</button></li>
+            <li><button id="acero" type="button">Acero</button></li>
+            <li><button id="siniestro" type="button">Siniestro</button></li>
+            <li><button id="fantasma" type="button">Fantasma</button></li>
+            <li><button id="dragon" type="button">Dragon</button></li>
+            <li><button id="electrico" type="button">Electrico</button></li>
+            <li><button id="psiquico" type="button">Psiquico</button></li>
+            <li><button id="lucha" type="button">Lucha</button></li>
+            <li><button id="normal" type="button">Normal</button></li>
+            <li><button id="hielo" type="button">Hielo</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Listado de Pokemón</h2>
+      <section class="catalogo-container"></section>
+      <button type="button" class="button">Cargar más</button>
+    </main>
+    <footer>
+      <p>Todos los derechos reservados &copy;</p>
+    </footer>
+  </body>
+</html>
