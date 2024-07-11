@@ -46,7 +46,7 @@ class MemberCard extends HTMLElement {
 
   render() {
     this.shadowRoot.innerHTML = /* html */ `
-    <style>${MemberCard.styles}</style>
+    <style>${DetailHeading.styles}</style>
       <div class="card">
         <div class="card-image">
           <img
@@ -62,4 +62,4 @@ class MemberCard extends HTMLElement {
   }
 }
 
-customElements.define('member-card', MemberCard);
+customElements.define('member-card', DetailHeading);
