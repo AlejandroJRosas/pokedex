@@ -41,6 +41,17 @@ button {
   font-family: 'Pixelify Sans';
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+
+  .load-more-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 #btn_filtros {
   background-color: #727f7dbd;
   color: white;

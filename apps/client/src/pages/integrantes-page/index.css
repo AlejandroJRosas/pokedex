@@ -53,6 +53,15 @@ main h2 {
   line-height: 1.5;
 }
 
+.members-section {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10% 5%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .card-row {
   display: flex;
   flex-wrap: wrap;

@@ -18,11 +18,10 @@ class Navbar extends HTMLElement {
           align-items: center;
           justify-content: space-around;
           background-color: #333;
-          padding: 1em;
           margin: 0;
           top: 0;
           left: 0;
-          width: 100%;
+          width: 100vw;
           z-index: 1000;
           position: relative;
         }
