@@ -1,3 +1,5 @@
+<!-- eslint-disable @html-eslint/id-naming-convention -->
+<!-- eslint-disable @html-eslint/no-inline-styles -->
 <!doctype html>
 <html lang="es">
   <head>
@@ -29,100 +31,96 @@
   <body>
     <navbar-component></navbar-component>
     <main>
-      <section class="pokemon-container">
-        <img
-          alt="Imagen del Pokemon"
-          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
-        />
-        <div class="name-container">
-          <span>Bullbasaur</span>
-          <span>Numero: 001</span>
-        </div>
-        <audio controls>
-          <source
-            type="audio/mp3"
-            src="/apps/client/src/pages/detail-page/public/Audios/Pokemon – Black and White full.mp3"
+      <detail-heading
+        image="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
+        name="Bulbasaur"
+        id="001"
+      ></detail-heading>
+
+      <div>
+        <section class="pokemon-info-container">
+          <div>
+            <h3>Descripción</h3>
+            <p>
+              Tras nacer, crece alimentándose durante un tiempo de los
+              nutrientes que contiene el bulbo de su lomo.
+            </p>
+          </div>
+
+          <div>
+            <h3>Tipos</h3>
+            <ul>
+              <li>Planta</li>
+              <li>Veneno</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Altura</h3>
+            <p>0.7 m</p>
+            <h3>Peso</h3>
+            <p>6.9 kg</p>
+          </div>
+          <div>
+            <h3>Debilidades</h3>
+            <ul>
+              <li>Fuego</li>
+              <li>Volador</li>
+              <li>Psíquico</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section class="pokemon-stats-container">
+          <div class="skill">
+            <p>PS<span>95%</span></p>
+            <div class="progress" style="--wth: 90%"></div>
+          </div>
+          <div class="skill">
+            <p>ATTACK<span>80%</span></p>
+            <div class="progress" style="--wth: 80%"></div>
+          </div>
+          <div class="skill">
+            <p>SPECIAL ATTACK<span>70%</span></p>
+            <div class="progress" style="--wth: 70%"></div>
+          </div>
+          <div class="skill">
+            <p>DEFENSE<span>90%</span></p>
+            <div class="progress" style="--wth: 90%"></div>
+          </div>
+          <div class="skill">
+            <p>SPECIAL DEFENSE<span>85%</span></p>
+            <div class="progress" style="--wth: 85%"></div>
+          </div>
+          <div class="skill">
+            <p>SPEED<span>70%</span></p>
+            <div class="progress" style="--wth: 70%"></div>
+          </div>
+        </section>
+      </div>
+
+      <div>
+        <section class="pokemon-evolution-container">
+          <img
+            alt="Bullbasaur"
+            src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
           />
-        </audio>
-      </section>
-
-      <section class="pokemon-info-container">
-        <div>
-          <h3>Descripción</h3>
-          <p>
-            Tras nacer, crece alimentándose durante un tiempo de los nutrientes
-            que contiene el bulbo de su lomo.
-          </p>
-        </div>
-        <div>
-          <h3>Tipos</h3>
-          <ul>
-            <li>Planta</li>
-            <li>Veneno</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Altura</h3>
-          <p>0.7 m</p>
-          <h3>Peso</h3>
-          <p>6.9 kg</p>
-        </div>
-        <div>
-          <h3>Debilidades</h3>
-          <ul>
-            <li>Fuego</li>
-            <li>Volador</li>
-            <li>Psíquico</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="pokemon-stats-container">
-        <div class="skill">
-          <p>PS<span>95%</span></p>
-          <div class="progress" style="--wth: 90%"></div>
-        </div>
-        <div class="skill">
-          <p>ATTACK<span>80%</span></p>
-          <div class="progress" style="--wth: 80%"></div>
-        </div>
-        <div class="skill">
-          <p>SPECIAL ATTACK<span>70%</span></p>
-          <div class="progress" style="--wth: 70%"></div>
-        </div>
-        <div class="skill">
-          <p>DEFENSE<span>90%</span></p>
-          <div class="progress" style="--wth: 90%"></div>
-        </div>
-        <div class="skill">
-          <p>SPECIAL DEFENSE<span>85%</span></p>
-          <div class="progress" style="--wth: 85%"></div>
-        </div>
-        <div class="skill">
-          <p>SPEED<span>70%</span></p>
-          <div class="progress" style="--wth: 70%"></div>
-        </div>
-      </section>
-
-      <section class="pokemon-evolution-container">
-        <img
-          alt="Bullbasaur"
-          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
-        />
-        <i id="flecha" class="fa-solid fa-arrow-left">&nbsp;</i>
-        <img
-          alt="Bullbasaur"
-          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
-        />
-        <i id="flecha2" class="fa-solid fa-arrow-left">&nbsp;</i>
-        <img
-          alt="Bullbasaur"
-          src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
-        />
-      </section>
-      <footer>
-        <p>Todos los derechos reservados &copy;</p>
-      </footer>
+          <i id="flecha" class="fa-solid fa-arrow-left">&nbsp;</i>
+          <img
+            alt="Bullbasaur"
+            src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
+          />
+          <i id="flecha2" class="fa-solid fa-arrow-left">&nbsp;</i>
+          <img
+            alt="Bullbasaur"
+            src="/apps/client/src/pages/detail-page/public/img/Bullbasaur.png"
+          />
+        </section>
+      </div>
     </main>
+    <footer>
+      <p>Todos los derechos reservados &copy;</p>
+    </footer>
   </body>
 </html>
