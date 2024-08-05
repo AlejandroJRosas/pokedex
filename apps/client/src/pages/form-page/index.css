@@ -10,7 +10,7 @@
 
 body {
   font-family: 'Pixelify Sans';
-  background-color: #ece1d5;
+  background-color: #fff;
 }
 
 main {
@@ -21,7 +21,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #ece1d5;
+  background-color: #fff;
 }
 
 /* #FDE6D8*/
@@ -30,7 +30,7 @@ main {
 main h2 {
   padding-top: 2em;
   font-weight: bold;
-  color: #691291;
+  color: #FF729F;
   font-size: 3.5em;
 }
 
@@ -54,7 +54,7 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fef5ef;
+  background-color: #f9f9f9;
   width: 80em;
   border-radius: 1.5em;
   margin-bottom: 2em;
@@ -193,7 +193,6 @@ textarea {
   width: 20em;
   height: 5em;
   text-indent: 0.5em;
-  border: 2px solid #000000;
   border-radius: 0.5em;
   font-family: 'Pixelify Sans';
 }
@@ -202,9 +201,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #466365;
+  background: #C287E8;
   height: 5em;
-  border-top: 2px solid #000000;
   color: white;
 }
 

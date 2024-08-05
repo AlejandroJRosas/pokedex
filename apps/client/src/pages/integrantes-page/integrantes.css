@@ -8,7 +8,7 @@ main h2 {
   padding-top: 2em;
   text-decoration: underline;
   font-weight: bold;
-  color: #691291;
+  color: #FF729F;
   font-size: 3.5em;
 }
 
@@ -163,9 +163,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #466365;
+  background: #C287E8;
   height: 5em;
-  border-top: 2px solid #000000;
   color: white;
 }
 

@@ -12,8 +12,8 @@ class PokemonCard extends HTMLElement {
     .pokemon-card {
       width: 300px;
       border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
+      border-radius: 20px;
+      padding: 25px;
       margin: 10px;
       display: inline-block;
       background-color: #f2f2f2;
@@ -52,7 +52,7 @@ class PokemonCard extends HTMLElement {
     .tipos p {
       margin: 5px;
       padding: 5px;
-      background-color: #B3CBB9;
+      background-color: #81F4E1;
       color: #333;
       border-radius: 5px;
     }
@@ -63,14 +63,14 @@ class PokemonCard extends HTMLElement {
       margin-top: 10px;
       color: #fff;
       text-decoration: none;
-      background-color: #84A9C0;
+      background-color: #56CBF9;
       padding: 10px;
       border-radius: 5px;
       transition: background-color 0.3s ease;
     }
 
     a:hover {
-      background-color: #a6c1d1;
+      background-color: #56CBF9;
     }
 
     @media (max-width: 600px) {

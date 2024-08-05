@@ -31,6 +31,7 @@ body {
   margin: 3em auto 0;
   height: auto;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .slider-box ul {

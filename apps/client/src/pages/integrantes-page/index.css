@@ -4,13 +4,13 @@ body {
   font-family: 'Pixelify Sans';
   overflow-y: scroll;
   margin: 0;
-  background-color: #ece1d5;
+  background-color: #fff;
 }
 
 main h2 {
   padding-top: 2em;
   font-weight: bold;
-  color: #691291;
+  color: #FF729F;
   font-size: 3.5em;
   text-align: center;
 }
@@ -101,9 +101,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #466365;
+  background: #C287E8;
   height: 5em;
-  border-top: 2px solid #000000;
   color: white;
 }
 
